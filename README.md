@@ -1,4 +1,4 @@
-# Bankly---NS-Hackathon-Lehman-College
+# Bankly---NS-Hackathon-Lehman-College Project
 Bankly, an app to manage your expenses
 
 # video Demo of App 
