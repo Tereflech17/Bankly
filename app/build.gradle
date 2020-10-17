@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "nsbe.com.bankly"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        buildConfigField "String", "API_KEY", "\"a1b15e196a1d53977d9b0d4caa141fc2\""
+        buildConfigField "String", "WILBERT", "\"5a064d78a73e4942cdafe88f\""
+        buildConfigField "String", "WERNER", "\"5a064d78a73e4942cdafe890\""
+        buildConfigField "String", "SONIA", "\"a064d79a73e4942cdafe891\""
+        buildConfigField "String", "MERCHANT", "\"57cf75cea73e494d8675ec49\""
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+
+
+def streamsupport = "1.5.6"
+
+def daggerVersion = "2.11"
+def retrofit = "2.3.0"
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:support-v4:27.0.0'
+    implementation 'com.android.support:design:27.0.0'
+    implementation "com.android.support:cardview-v7:27.0.0"
+    implementation "com.android.support:recyclerview-v7:27.0.0"
+
+
+
+
+    compile 'com.journeyapps:zxing-android-embedded:3.4.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation "de.hdodenhof:circleimageview:2.1.0"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.1"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:3.0.1"
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:3.0.1"
+    androidTestImplementation "com.android.support.test.espresso.idling:idling-concurrent:3.0.1"
+
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:retrofit-converters:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit"
+
+
+    implementation "net.sourceforge.streamsupport:streamsupport:$streamsupport"
+    implementation "net.sourceforge.streamsupport:streamsupport-cfuture:$streamsupport"
+    implementation "net.sourceforge.streamsupport:streamsupport-atomic:$streamsupport"
+    implementation "net.sourceforge.streamsupport:streamsupport-flow:$streamsupport"
+    implementation "net.sourceforge.streamsupport:streamsupport-literal:$streamsupport"
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.geniusforapp.fancydialog:FancyDialog:0.1.4'
+
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation 'com.willowtreeapps.spruce:spruce-android:1.0.1'
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+
+}

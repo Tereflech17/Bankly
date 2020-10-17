@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Bankly</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="api_key">a1b15e196a1d53977d9b0d4caa141fc2</string>
+
+    <string name="wilbert">5a064d78a73e4942cdafe88f</string>
+    <string name="werner">5a064d78a73e4942cdafe890</string>
+    <string name="sonia">5a064d79a73e4942cdafe891</string>
+    <string name="balance_200_00">Balance: $200.00</string>
+    <string name="balance">Balance</string>
+    <string name="dashboard_string">Dashboard</string>
+    <string name="statements">Statements</string>
+    <string name="analytics">Analytics</string>
+    <string name="accounts">Accounts</string>
+    <string name="investments">Investments</string>
+    <string name="welcome">Welcome</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="Statements">Statements</string>
+    <string name="progression">Progression:</string>
+    <string name="last_month_spent">Last Month Spent</string>
+    <string name="this_month_spent">This Month Spent</string>
+    <string name="percentage_increase">Percentage Increase</string>
+</resources>

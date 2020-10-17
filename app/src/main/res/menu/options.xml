@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_dashboard"
+        android:title="@string/dashboard_string" />
+
+    <item
+        android:id="@+id/action_statements"
+        android:title="@string/statements" />
+
+    <item
+        android:id="@+id/action_analytics"
+        android:title="@string/analytics" />
+
+
+
+
+</menu>
